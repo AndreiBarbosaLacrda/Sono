@@ -5,17 +5,20 @@ export function boasvindas() {
   return (
     <div className={styles['boas-vindas']}>
       <h2>Bem-vindo ao Contado!</h2>
-      <p>Use os botões a abixo para contara pois vc é tão burro que não consegue fazer isso de cabeça</p>
+      <p>
+        Use os botões a abixo para contara pois vc é tão burro que não consegue fazer isso de cabeça
+      </p>
+      <Imagem />
     </div>
   );
 }
 
 
-import image from '../images.jfif';
+import image from '../assets/bemvindoImg.png';
 export function Imagem() {
   return (
     <div className='fff'>
-      <img src={image} alt="Imagem" />
+      <img src={image} alt="Imagem"  />
     </div>
   );
 }

@@ -10,6 +10,12 @@
   font-family: Arial, Helvetica, sans-serif;
   color: #1f2a56;
 }
+.boas-vindas img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
 
 .boas-vindas h2 {
   margin: 0 0 12px;
@@ -27,11 +33,4 @@
   display: flex;
   justify-content: center;
   margin: 24px auto;
-}
-
-.fff img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
 }

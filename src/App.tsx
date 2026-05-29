@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import { boasvindas as BoasVindas } from './components/BoasVindas';
+
 import './index.css';
 import './theme.css';
 
@@ -11,21 +13,25 @@ export function App() {
   const resetar = () => setCount(0);
 
   return (
+    <>
     <div className="app">
-      <header className="app-header">
-        <h1>Meu Primeiro App de React</h1>
-        <p>Contador: <strong>{count}</strong></p>
+        <div className="app-header">
+          <div className="container">
+            <BoasVindas />
+            <h1>Meu Primeiro App de React</h1>
+            <p>Contador: <strong>{count}</strong></p>
 
-        <div className="buttons">
-          <button onClick={decrementar}>-</button>
-          <button onClick={incrementar}>+</button>
-          <button onClick={resetar}>Reset</button>
+            <div className="buttons">
+              <button onClick={decrementar}>-</button>
+              <button onClick={incrementar}>+</button>
+              <button onClick={resetar}>Reset</button>
+            </div>
+            <p className="info">
+            Feito por <strong>{'Andrei BL '}</strong> • 3º ano E.M. SENAC - Distrito Criativo
+            </p>
+          </div>
         </div>
-
-        <p className="info">
-          Feito por <strong>{ 'Andrei BL '}</strong> • 3º ano E.M. SENAC - Distrito Criativo
-        </p>
-      </header>
-    </div>
+      </div>
+    </>
   );
 }
